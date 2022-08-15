@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-import { SlidImg, Title } from './Slider.styled';
+import { SlidImg, Title, Container } from './Slider.styled';
 
 import slid_1 from '../../images/slider_1.jpg';
 import slid_2 from '../../images/slider_2.jpg';
@@ -7,7 +7,6 @@ import slid_3 from '../../images/slider_3.jpg';
 import slid_4 from '../../images/slider_4.jpg';
 import slid_5 from '../../images/slider_5.jpg';
 import slid_6 from '../../images/slider_6.jpg';
-import { Box } from 'components/Box';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -62,16 +61,16 @@ export const Slid = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          arrows: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          arrows: false,
         },
       },
       {
@@ -79,12 +78,13 @@ export const Slid = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
   return (
-    <Box width="800px">
+    <Container>
       <Title> POPULAR THIS WEEK</Title>
       <Slider {...settings}>
         <div>
@@ -106,6 +106,6 @@ export const Slid = () => {
           <SlidImg src={slid_6} alt="slid" />
         </div>
       </Slider>
-    </Box>
+    </Container>
   );
 };

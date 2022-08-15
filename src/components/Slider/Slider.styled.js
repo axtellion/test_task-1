@@ -12,3 +12,13 @@ export const Title = styled.h2`
 
   margin-bottom: 10px;
 `;
+
+export const Container = styled.div`
+  width: 400px;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 800px;
+  }
+`;

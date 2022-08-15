@@ -3,6 +3,7 @@ import { RatingStars } from 'components/RatingStars/RatingStars';
 import { Slid } from 'components/Slider/Slider';
 import { MdOutlineArrowRight } from 'react-icons/md';
 import { Flags } from 'components/Flags/Flags';
+import { useMedia } from 'react-use';
 import {
   Item,
   List,
@@ -16,6 +17,7 @@ import {
 } from './Hero.styled';
 
 export const Hero = () => {
+  const isWide = useMedia('(min-width: 590px)');
   return (
     <Box>
       <Item>
@@ -41,9 +43,7 @@ export const Hero = () => {
       </Info>
       <RatingStars />
       <Box display="flex" mb="15px">
-        <BtnRed>
-          STREAM NOW <MdOutlineArrowRight />
-        </BtnRed>
+        <BtnRed>STREAM NOW {isWide && <MdOutlineArrowRight />}</BtnRed>
         <Btn>ALL EPISODES</Btn>
       </Box>
       <Slid />

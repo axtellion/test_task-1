@@ -1,18 +1,25 @@
 import styled from 'styled-components';
 
 export const LogoImg = styled.img`
-  background-color: transparent;
-  margin-right: 16px;
-  color: green;
+  margin-right: 26px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  :hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const LogoDate = styled.span`
-  font-size: 24px;
-  color: #c8c8c8;
-  ::before {
-    content: '';
-    padding-left: 26px;
-    border-left: 3px solid white;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: ${p => p.theme.fontSizes.m};
+    color: ${p => p.theme.colors.secondary};
+    ::before {
+      content: '';
+      padding-left: 16px;
+      border-left: ${p => p.theme.borders.line};
+    }
   }
 `;
 
@@ -22,10 +29,14 @@ export const SvgBox = styled.span`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
   svg {
     width: 36px;
     height: 36px;
-    color: white;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    :hover {
+      transform: scale(1.2);
+    }
   }
 `;
 

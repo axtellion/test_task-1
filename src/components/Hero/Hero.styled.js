@@ -1,42 +1,70 @@
 import styled from 'styled-components';
 
 export const Item = styled.ul`
+  font-size: ${p => p.theme.fontSizes.m};
   display: flex;
-  gap: 45px;
-  font-size: 32px;
+  gap: 25px;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
-  color: white;
-  li:not(:last-child):after {
-    content: '';
-    border-right: 3px solid white;
-    padding-right: 22px;
+  @media screen and (min-width: 590px) {
+    font-size: ${p => p.theme.fontSizes.l};
+    gap: 45px;
+
+    li:not(:last-child):after {
+      content: ' ';
+      border-right: ${p => p.theme.borders.line};
+      padding-right: 22px;
+    }
   }
 `;
 
 export const List = styled.li``;
 
 export const Title = styled.h1`
-  color: white;
-  font-size: 64px;
-
+  font-size: 52px;
   margin-bottom: 36px;
+
+  @media screen and (min-width: 590px) {
+    font-size: ${p => p.theme.fontSizes.xl};
+
+    animation-name: example;
+    animation-duration: 2s;
+    position: relative;
+
+    @keyframes example {
+      0% {
+        transform: translateX(-50%);
+      }
+      50% {
+        transform: translateX(30%);
+      }
+      75% {
+        transform: translateX(10%);
+      }
+    }
+  }
 `;
 
 export const Text = styled.ul`
+  font-size: ${p => p.theme.fontSizes.l};
   display: flex;
+  flex-direction: column;
   gap: 25px;
-  font-size: 30px;
-
-  color: white;
   margin-bottom: 8px;
 
-  li:not(:last-child):after {
-    content: 'd';
-    color: transparent;
-    border-right: 3px solid white;
-    padding-right: 22px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1024px) {
+    li:not(:last-child):after {
+      content: 'd';
+      color: transparent;
+      border-right: ${p => p.theme.borders.line};
+
+      padding-right: 22px;
+    }
   }
 `;
 
@@ -47,36 +75,42 @@ export const TextTitle = styled.li`
 
 export const TextWrap = styled.span`
   margin-left: 12px;
-  color: #a7a6a6;
+  color: ${p => p.theme.colors.accent};
 `;
 
 export const Info = styled.p`
-  font-size: 24px;
-  color: #a7a6a6;
-  max-width: 864px;
+  font-size: ${p => p.theme.fontSizes.m};
+  color: ${p => p.theme.colors.accent};
 
   margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 864px;
+  }
 `;
 
 export const BtnRed = styled.button`
   cursor: pointer;
-  width: 272px;
-  font-size: 22px;
-  color: red;
+
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.primary};
+  color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.primary};
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 35px;
+
   border-radius: 10px;
   border: none;
-  margin-right: 50px;
 
-  color: white;
-  background-color: red;
+  width: 272px;
+  margin-right: 50px;
+  padding: 16px 35px;
 
   svg {
-    background-color: white;
-    fill: red;
+    background-color: ${p => p.theme.colors.white};
+    fill: ${p => p.theme.colors.primary};
 
     margin-left: 20px;
     border-radius: 50%;
@@ -86,13 +120,14 @@ export const BtnRed = styled.button`
 `;
 
 export const Btn = styled.button`
-  cursor: pointer;
-  font-size: 22px;
-  width: 272px;
-  border: 3px solid white;
+  font-size: ${p => p.theme.fontSizes.s};
+  color: ${p => p.theme.colors.white};
+  border: ${p => p.theme.borders.line};
   border-radius: 10px;
   background-color: transparent;
-  color: white;
 
+  width: 272px;
   padding: 16px 58px;
+
+  cursor: pointer;
 `;
