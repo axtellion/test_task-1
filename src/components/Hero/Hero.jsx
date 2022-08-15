@@ -1,6 +1,8 @@
 import { Box } from 'components/Box';
 import { RatingStars } from 'components/RatingStars/RatingStars';
+import { Slid } from 'components/Slider/Slider';
 import { MdOutlineArrowRight } from 'react-icons/md';
+import { Flags } from 'components/Flags/Flags';
 import {
   Item,
   List,
@@ -38,14 +40,14 @@ export const Hero = () => {
         unravel a series of extraordinary mysteries.
       </Info>
       <RatingStars />
-      <Box display="flex">
+      <Box display="flex" mb="15px">
         <BtnRed>
           STREAM NOW <MdOutlineArrowRight />
         </BtnRed>
         <Btn>ALL EPISODES</Btn>
       </Box>
+      <Slid />
+      <Flags />
     </Box>
   );
 };
-
-//MdOutlineArrowRight

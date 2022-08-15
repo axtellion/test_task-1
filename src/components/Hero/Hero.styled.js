@@ -59,6 +59,7 @@ export const Info = styled.p`
 `;
 
 export const BtnRed = styled.button`
+  cursor: pointer;
   width: 272px;
   font-size: 22px;
   color: red;
@@ -85,6 +86,8 @@ export const BtnRed = styled.button`
 `;
 
 export const Btn = styled.button`
+  cursor: pointer;
+  font-size: 22px;
   width: 272px;
   border: 3px solid white;
   border-radius: 10px;

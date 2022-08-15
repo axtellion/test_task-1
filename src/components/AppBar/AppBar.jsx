@@ -17,7 +17,7 @@ export const AppBar = () => {
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      mb="115px"
+      mb="35px"
     >
       <Box display="flex" alignItems="center">
         <a href="/">

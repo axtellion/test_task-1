@@ -10,7 +10,7 @@ export const RatingStars = () => {
   };
 
   return (
-    <Box mb="43px">
+    <Box mb="23px">
       <RatingStar
         noBorder="false"
         size={30}

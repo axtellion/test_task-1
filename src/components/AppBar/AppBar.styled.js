@@ -18,6 +18,10 @@ export const LogoDate = styled.span`
 
 export const SvgBox = styled.span`
   margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   svg {
     width: 36px;
     height: 36px;
