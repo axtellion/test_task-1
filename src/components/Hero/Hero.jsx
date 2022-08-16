@@ -19,7 +19,7 @@ import {
 export const Hero = () => {
   const isWide = useMedia('(min-width: 590px)');
   return (
-    <Box>
+    <Box as="main">
       <Item>
         <List>Drama</List>
         <List>Thriller</List>

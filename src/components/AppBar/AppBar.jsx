@@ -18,6 +18,7 @@ export const AppBar = () => {
       alignItems="center"
       justifyContent="space-between"
       mb="15px"
+      as="header"
     >
       <Box display="flex" alignItems="center">
         <a href="/">

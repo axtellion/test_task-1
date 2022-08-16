@@ -13,7 +13,7 @@ export const ContainerBg = styled.div`
   );
 `;
 
-export const Container = styled.main`
+export const Container = styled.div`
   position: relative;
   z-index: 100;
   padding-left: 41px;
