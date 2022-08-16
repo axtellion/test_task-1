@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.c13df38d.css",
-    "main.js": "/react-homework-template/static/js/main.338d5f95.js",
-    "static/media/slider_5.jpg": "/react-homework-template/static/media/slider_5.71af1251e9732b4adbbf.jpg",
-    "static/media/slider_6.jpg": "/react-homework-template/static/media/slider_6.6b2f1b5c1a6a827ad7b9.jpg",
-    "static/media/slider_4.jpg": "/react-homework-template/static/media/slider_4.e8408eef0d9b18c3eeee.jpg",
-    "static/media/slider_3.jpg": "/react-homework-template/static/media/slider_3.2b471cfb012fd1092735.jpg",
-    "static/media/slider_1.jpg": "/react-homework-template/static/media/slider_1.af35d64f4aa32e6af6f1.jpg",
-    "static/media/slider_2.jpg": "/react-homework-template/static/media/slider_2.b538bd1629eda5447f3d.jpg",
-    "static/media/user.png": "/react-homework-template/static/media/user.59f5a9c6e06b28892baa.png",
-    "static/media/slick.svg": "/react-homework-template/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/react-homework-template/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/react-homework-template/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/react-homework-template/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/react-homework-template/index.html",
-    "main.c13df38d.css.map": "/react-homework-template/static/css/main.c13df38d.css.map",
-    "main.338d5f95.js.map": "/react-homework-template/static/js/main.338d5f95.js.map"
+    "main.css": "/test_task-1/static/css/main.d3d75b00.css",
+    "main.js": "/test_task-1/static/js/main.7041c442.js",
+    "static/media/slider_5.jpg": "/test_task-1/static/media/slider_5.71af1251e9732b4adbbf.jpg",
+    "static/media/slider_6.jpg": "/test_task-1/static/media/slider_6.6b2f1b5c1a6a827ad7b9.jpg",
+    "static/media/slider_4.jpg": "/test_task-1/static/media/slider_4.e8408eef0d9b18c3eeee.jpg",
+    "static/media/slider_3.jpg": "/test_task-1/static/media/slider_3.2b471cfb012fd1092735.jpg",
+    "static/media/slider_1.jpg": "/test_task-1/static/media/slider_1.af35d64f4aa32e6af6f1.jpg",
+    "static/media/slider_2.jpg": "/test_task-1/static/media/slider_2.b538bd1629eda5447f3d.jpg",
+    "static/media/user.png": "/test_task-1/static/media/user.59f5a9c6e06b28892baa.png",
+    "static/media/slick.svg": "/test_task-1/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/test_task-1/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/test_task-1/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/test_task-1/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/test_task-1/index.html",
+    "main.d3d75b00.css.map": "/test_task-1/static/css/main.d3d75b00.css.map",
+    "main.7041c442.js.map": "/test_task-1/static/js/main.7041c442.js.map"
   },
   "entrypoints": [
-    "static/css/main.c13df38d.css",
-    "static/js/main.338d5f95.js"
+    "static/css/main.d3d75b00.css",
+    "static/js/main.7041c442.js"
   ]
 }
